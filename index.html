@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Abed</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <script src="https://kit.fontawesome.com/0920714867.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <a class="split"> FADHIL ABDURRAHMAN</a>
+            </div>
+            <div class="navigation">
+                <a href="#about" class="nav"><i class="fa fa-user"></i> About</a> 
+                <a href="#movies" class="nav"><i class="fa fa-film"></i> Movies</a> 
+                <a href="#playlist" class="nav"><i class="fa fa-music"></i> Playlist</a> 
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-display">
+            <div class="box first">
+                <h1>
+                    Hello! 
+                    <br>I'm Abed👋 
+                </h1>
+                <p>
+                    My name is Fadhil Abdurrahman but you can call me Abed😉, 
+                    I really like watching movies and listening to music, here are the lists of some of my favorite movies and songs!
+                </p>
+            </div>
+            <div class="box second">
+                <img src="assets/abed.png" alt="" />
+            </div>
+        </div>
+        <div class="content">
+            <div class="playlist-container" id="playlist">
+                <h2><i class="fa fa-music"></i>&nbsp; Playlist</h2>
+                <p>These are my current favorite playlist on Spotify, visit my Spotify Profile to see more of my playlist.</p>
+                <a href="https://open.spotify.com/user/315hmzwax26ilnnjdhnyvojylqti?si=5WHmsVhUTAqOyJC4PH-Ecg&utm_source=copy-link" target="_blank" class="button">Click Me!</a>
+                <div class="playlist-row">
+                    <div class="playlist-column">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pNnf8HaBDKs37g7pQMWbv?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                    
+                        <p>I often listen to this playlist for whatever activity I do that may need a punch of intensity🤣.</p>
+                    </div>
+                    <div class="playlist-column">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7iYsBI9hHEuRQ6ganmKzau?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <p>This is the list of my favorite OST from the drama that I ever watched.</p>
+                    </div>
+                    <div class="playlist-column">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7kJ1o4MvxyDCYPIzkliZUb?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                    
+                        <p>This playlist contains many Japanese songs that I found on TikTok but mostly come from the anime that I watched.</p>
+                    </div>
+                </div>
+            </div>
+            <article class="movies-container" id="movies">
+                <h2><i class="fa fa-film"></i>&nbsp; Movies</h2>
+                <p>My Top 3 favorite Movies and TV Shows I have ever watched!</p>
+                <section>
+                    <h3>Interstellar</h3>
+                    <div class="slideshow-container">
+                        <div class="slides1 fade">
+                            <img src="assets/interstellar1.jpg">
+                        </div>
+                        <div class="slides1 fade">
+                            <img src="assets/interstellar2.jpg">
+                        </div>
+                        <div class="slides1 fade">
+                            <img src="assets/interstellar3.jpg">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 0)"><i class="fa fa-chevron-circle-left fa-2x"></i></a>
+                        <a class="next" onclick="plusSlides(1, 0)"><i class="fa fa-chevron-circle-right fa-2x"></i></a>
+                    </div>
+                    <p>Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.
+                        <br><br>My favorite Christopher Nolan movie! I like how it plays with your ideas of time, space, garavity and family love. One of the best Sci-Fi/Action movies I've ever come across.
+                    </p>
+                </section>
+                <section>
+                    <h3>Avatar</h3>
+                    <div class="slideshow-container">
+                        <div class="slides2 fade">
+                            <img src="assets/avatar1.jpg">
+                        </div>
+                        <div class="slides2 fade">
+                            <img src="assets/avatar2.jpg">
+                        </div>
+                        <div class="slides2 fade">
+                            <img src="assets/avatar3.jpg">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 1)"><i class="fa fa-chevron-circle-left fa-2x"></i></a>
+                        <a class="next" onclick="plusSlides(1, 1)"><i class="fa fa-chevron-circle-right fa-2x"></i></a>
+                    </div>
+                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, must link to human minds to allow for free movement on Pandora. Jake Sully, a paralyzed former Marine, becomes mobile again through one such Avatar and falls in love with a Na'vi woman. As a bond with her grows, he is drawn into a battle for the survival of her world.
+                        <br><br>The reason why i very like this movie is because the Animation , The V.F.X , the plot , the idea of another planet and everything in it is damn amazing and fascinating.
+                    </p>
+                </section>
+                </section>
+                <section>
+                    <h3>Game Of Thrones</h3>
+                    <div class="slideshow-container">
+                        <div class="slides3 fade">
+                            <img src="assets/got1.jpg">
+                        </div>
+                        <div class="slides3 fade">
+                            <img src="assets/got2.jpg">
+                        </div>
+                        <div class="slides3 fade">
+                            <img src="assets/got3.jpg">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 2)"><i class="fa fa-chevron-circle-left fa-2x"></i></a>
+                        <a class="next" onclick="plusSlides(1, 2)"><i class="fa fa-chevron-circle-right fa-2x"></i></a>
+                    </div>
+                    <p>In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.
+                        <br><br>This is the series i would recommend to anybody , it is an amazing piece of work , the most stunning TV series you will ever watch although the season finale is dissapointing as hell, but the first 7 seasons are worth the disappointments later on. You will enjoy every episode😉
+                    </p>
+                </section>
+            </article>
+        </div>
+        <aside class="profile-container" id="about">
+            <h2> <i class="fa fa-user"></i>&nbsp; About me</h2>
+            <div class="profile-column">
+                <div class="profile">
+                    <img src="assets/abed2.jpg">
+                </div>
+                <p> 
+                    <i class="fa fa-id-card-o fa-fw"></i>&nbsp; Fadhil Abdurrahman
+                    <br><i class="fa fa-calendar fa-fw"></i>&nbsp; 10 Juli 2003
+                    <br><i class="fa fa-map-marker fa-fw"></i>&nbsp; Balikpapan / Surabaya
+                </p>
+                <div class="social">
+                    <a href="https://twitter.com/fadhilabeed" target="_blank" class="icon-button twitter">
+                        <i class="fa fa-twitter"></i><span></span>
+                    </a>
+                    <a href="https://discordapp.com/users/509575827076284416/" target="_blank" class="icon-button discord">
+                        <i class="fa-brands fa-discord"></i><span></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fadhilabdurrahman/" target="_blank" class="icon-button linkedin">
+                        <i class="fa-brands fa-linkedin"></i><span></span>
+                    </a>
+                    <a href="https://www.instagram.com/fadhilabeed/" target="_blank" class="icon-button instagram">
+                        <i class="fa-brands fa-instagram"></i><span></span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>Fadhil Abdurrahman | abed &#169; 2022, Dicoding Academy</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

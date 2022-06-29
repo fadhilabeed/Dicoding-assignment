@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #212121;
+    padding: 0 5%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: sticky;
+    overflow: hidden;
+    z-index: 2;
+}
+
+nav a.split {
+    float: left;
+    color: black;
+    font-weight: 700;
+    font-size: 23px;
+    padding: 11.5px 10px;
+    background-color: #29a19c;
+    background-image: linear-gradient(45deg, #29a19c 0%, #a1f5be 100%); 
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    border-radius: 50px;
+}
+
+nav a {
+    float: right;
+    padding: 16px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+nav .nav:hover {
+    background-color: #29A19C;
+    transform: scaleX(1.1);
+}
+
+
+@media screen and (max-width: 750px) { /*When the .navigation contact with .name*/
+    nav {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .name {
+        float: none;
+        display: flex;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Main Display*/
+main{
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #212121;
+    background-size: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-display{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0 25px;
+    background-color: #212121;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #212121 40px ), repeating-linear-gradient( #43505555, #435055 );
+    box-shadow: 0 10px 10px -5px;
+}
+
+.box {
+    flex-basis: 40%;
+}
+
+.first {
+    margin-bottom: 25px;
+}
+
+.first h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.first h1, .first p{
+    color: white;
+}
+
+.second{
+    padding: 10px;
+    margin: 3.5% 0 5% 0;
+}
+
+.second img{
+    max-width: 100%;
+    /* max-height: 100%; */
+    filter: drop-shadow(5px 5px 5px #666666);
+}
+
+@media screen and (max-width: 649px) { /*When the main-display's Item wrapping*/
+    .first {
+        margin-bottom: 0px;
+    }
+    .second{
+        margin-top: 0px;
+    }
+    .box{
+        flex-basis: 100%;
+    }
+}
+
+/* content */
+.content{
+    padding: 0 50px;
+    color: white;
+}
+
+h2, h2 + p{
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .content{
+        padding: 0 7.5%;
+    }
+}
+
+@media screen and (max-width: 325px) { /*For Galaxy Fold and etc. */
+    .content{
+        padding: 5.5%;
+    }
+    .main-display{
+        padding: 10px;
+    }
+    .first h1{
+        font-size: 40px;
+        line-height: 50px;
+        margin: 25px 0;
+    }
+}
+
+/* Playlist */
+.playlist-container h2{
+    margin-bottom: 5px;
+}
+
+.playlist-container p{
+    margin: 0 0 10px 0;
+}
+
+.playlist-row{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.playlist-row p{
+    margin-top: 5px;
+}
+
+.playlist-column{
+    flex-basis: 30%;
+    margin: 0 0 20px 0;
+}
+
+.button {
+    width: max-content;
+    margin-inline: auto;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    display: block;
+    background-color: #29a19c;
+    color: black;
+    font-weight: 900;
+    padding: 8px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+    background: radial-gradient(circle at 50% 50%,#a3f7bf, #29a19c)
+}
+
+.button:hover {
+    transform: translateY(-7px);
+}
+
+iframe{
+    border: 5px solid;
+    border-color: #a3f7bf;
+}
+
+@media screen and (max-width: 910px) {
+    .playlist-row{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* movies */
+.movies-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.movies-container h2, 
+.movies-container h3{
+    margin: 19px 0 5px 0;
+}
+
+.movies-container p{
+    margin: 0;
+}
+
+section{ 
+    max-width: 800px;
+}
+
+section img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.slides1, .slides2, .slides3{
+    display: none
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -30px;
+    color: white;
+    transition: 0.5s ease-in-out;
+    user-select: none;
+    opacity: .5;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    color: black;
+    transform: rotateX(180deg);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+/* profile */
+.profile-container{
+    text-align: center;
+    color: white;
+}
+
+.profile-container h2{
+    margin: 20px 0 10px 0;
+}
+
+.profile-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 0 5% 0 5%;
+}
+
+.profile{
+    max-width: 250px;
+}
+
+.profile-column p{
+    text-align:start;
+}
+
+.profile img{
+    max-width: 100%;
+    border: 5px solid #a3f7bf;
+    border-radius: 30px;
+}
+
+.icon-button {
+	background-color: white;
+	border-radius: 3rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.8rem;
+	height: 3rem;
+	line-height: 3rem;
+	margin: 0 5px 20px 5px;
+	position: relative;
+	text-align: center;
+	user-select: none;
+	width: 3rem;
+}
+
+.icon-button i {    
+	background: none;
+	color: white;
+	height: 3rem;
+	left: 0;
+	line-height: 3rem;
+	position: absolute;
+	top: 0;
+	transition: all 0.3s;
+	width: 3rem;
+	z-index: 10;
+}
+
+.icon-button span { 
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 3rem;
+	margin: -1.5rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.discord span {
+	background-color: #5865F2;
+}
+.linkedin span{
+    background-color: #0072b1;
+}
+.instagram span {
+	background: #f09433; 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.instagram{
+    font-size: 2rem; 
+}
+
+.icon-button .fa-twitter {
+	color: #4099ff;
+}
+.icon-button .fa-discord {
+	color: #5865F2;
+}
+.icon-button .fa-linkedin {
+	color: #0072b1;
+}
+.icon-button .fa-instagram {
+	color: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-discord,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-linkedin {
+	color: white;
+    -webkit-text-fill-color: white;
+}
+
+/* footer */
+footer {
+    box-shadow: inset 0 0 10px #000000;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    background: radial-gradient(circle at 50% 50%,#a3f7bf, #50e2ae, #29a19c)
+}
